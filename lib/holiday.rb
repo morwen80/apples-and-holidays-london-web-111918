@@ -88,9 +88,9 @@ def all_supplies_in_holidays(holiday_hash)
   # include the string "BBQ"
 withBBQ = []
   holiday_hash.collect do |season, holidays|
-    
-    if holidays.values.include? ("BBQ") 
-      withBBQ << holidays.to_sym
+    holidays.each do |holiday, supply|
+    if holiday.values.include? ("BBQ") 
+      withBBQ << holiday.to_sym
   end
   withBBQ
 end
