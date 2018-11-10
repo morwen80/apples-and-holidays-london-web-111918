@@ -90,7 +90,7 @@ withBBQ = []
   holiday_hash.collect do |season, holidays|
     
     if holidays.values.include? "BBQ" == true 
-      withBBQ << holidays
+      withBBQ << holidays.to_sym
   end
   withBBQ
 end
