@@ -89,7 +89,7 @@ def all_supplies_in_holidays(holiday_hash)
 withBBQ = []
   holiday_hash.collect do |season, holidays|
     
-    if holidays.values.include? "BBQ" == true 
+    if holidays.values.include? ("BBQ") 
       withBBQ << holidays.to_sym
   end
   withBBQ
