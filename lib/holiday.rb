@@ -92,6 +92,7 @@ withBBQ = []
     if holiday.values.include? ("BBQ") 
       withBBQ << holiday.to_sym
   end
+end
   withBBQ
 end
 end
